@@ -17,23 +17,14 @@ on the complexity of the general sorting problem we covered in class.
 
 Add your answers to this markdown file.
 
-I would verify this claim by using the algorithm to sort all permutations of
-lists of varying sizes. If X does run on $O(n)$, all permutations of an input
-size n will take around the same amount of time, and as the input size 
-increases, the runtime will increase linearly. Any comparison based algorithm 
-will need to at least look at all of the elements of a list which results in a 
-linear time complexity. This means the lower bound of X should be $\Omega(n)$.
-If $O(n)$ is the upper bound, all of these inputs should take approximately the
-same amount since the upper and lower bounds of X are the same. If one ordering
-does not take the same amount of time as the rest of the orderings, that means
-it has exceeded the upper bound, and X is incorrect. 
-
-The runtime should also increase linearly with the input size. For example, if
-input size 100 takes 0.1 seconds, input size 100,000 should take around 1000 
-times longer, so around 100 seconds since the time should be increasing at the
-same rate as the input size. Other performance factors can affect this time 
-though, so I would graph the runtimes of the different input sizes and make sure
-they follow a linear slope. If there are any major outliers, X is incorrect.
+I would verify this claim by using the algorithm to sort sorted lists, reverse
+sorted lists, and randomly permuted lists of varying sizes. If X does run on 
+$O(n)$, as the input size increases, the runtime will increase linearly for each
+case. For example, if input size 100 takes 0.1 seconds, input size 100,000 should
+take around 1000 times longer, so around 100 seconds since the time should be 
+increasing proportionally to the input size. Other performance factors can affect
+this time though, so I would graph the runtimes of each case and make sure they 
+follow a linear slope. If there are any major outliers, X is incorrect.
 
 Theoretically, X could not be correct. Comparison-based algorithms can be 
 represented by a binary decision tree since each comparison leads you to a
